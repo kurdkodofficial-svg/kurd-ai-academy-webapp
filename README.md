@@ -13,10 +13,8 @@ This repository contains a responsive interactive learning web app for Kurd AI A
 ## Run locally
 Open `index.html` in a browser.
 
-## Technology used
-- HTML
-- CSS
-- JavaScript
+## Link
+https://kurdkodofficial-svg.github.io/kurd-ai-academy-webapp/
 
 ## Notes
 This is a front-end prototype for demonstration and learning purposes. It does not include authentication, a database, or a real admin panel yet.
