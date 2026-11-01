@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kurd AI Academy Web App — learn languages, digital skills, and AI literacy with guided lessons."
+    />
+    <title>Kurd AI Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand" aria-label="Kurd AI Academy Logo">
+          <div class="brand-mark">KAI</div>
+          <span>Kurd AI Academy</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#courses">Courses</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+          <label class="sr-only" for="languageSelect">Language</label>
+          <select id="languageSelect" aria-label="Choose language">
+            <option value="ku">کوردی</option>
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+            <option value="tr">Türkçe</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow" id="heroEyebrow">Learn today. Build tomorrow.</span>
+            <h1 id="heroTitle">فێربە، گەشە بکە، داهاتووی خۆت دروست بکە.</h1>
+            <p id="heroText">
+              کۆرسەکانمان بۆ زمانی کوردی، ئینگلیزی، دیجیتاڵ و زیرەکی دەستکرد دەتوانن
+              هەنگاوی سەرەکی بۆ پەرەپێدانی کەسبی و خۆشکەری بدەن.
+            </p>
+            <div class="hero-actions">
+              <a href="#courses" class="primary-btn" id="heroBtnPrimary">Start learning</a>
+              <a href="#roadmap" class="secondary-btn" id="heroBtnSecondary">See roadmap</a>
+            </div>
+            <div class="hero-pills">
+              <span id="pillOne">Beginner friendly</span>
+              <span id="pillTwo">Free access</span>
+              <span id="pillThree">Practical skills</span>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="panel-card">
+              <div class="panel-head">
+                <span class="dot"></span>
+                <span id="panelLabel">Learning journey</span>
+              </div>
+
+              <div class="mini-visual">
+                <div class="module module-1">📘</div>
+                <div class="module module-2">💡</div>
+                <div class="module module-3">🤖</div>
+                <div class="center-book">📖</div>
+              </div>
+
+              <div class="panel-footer">
+                <div>
+                  <strong id="miniStatOne">3</strong>
+                  <span id="miniTextOne">Paths</span>
+                </div>
+                <div>
+                  <strong id="miniStatTwo">12+</strong>
+                  <span id="miniTextTwo">Activities</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="container stats-grid">
+          <div class="stat">
+            <strong>90%</strong>
+            <span id="statOne">Practical learning</span>
+          </div>
+          <div class="stat">
+            <strong>24/7</strong>
+            <span id="statTwo">Flexible study</span>
+          </div>
+          <div class="stat">
+            <strong>4</strong>
+            <span id="statThree">Languages</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses" class="content-section">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker" id="coursesKicker">Learning paths</span>
+            <h2 id="coursesTitle">Choose a path that matches your goal</h2>
+          </div>
+          <div id="courseGrid" class="course-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="content-section detail-section">
+        <div class="container">
+          <div id="courseDetail" class="course-detail" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="content-section">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker" id="roadmapKicker">How it works</span>
+            <h2 id="roadmapTitle">A simple learning cycle</h2>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <div class="step-num">01</div>
+              <h3 id="stepOneTitle">Choose a skill</h3>
+              <p id="stepOneText">Pick the path that feels most useful for your future.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-num">02</div>
+              <h3 id="stepTwoTitle">Study and practice</h3>
+              <p id="stepTwoText">Review short content and solve guided exercises.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-num">03</div>
+              <h3 id="stepThreeTitle">Track progress</h3>
+              <p id="stepThreeText">Measure what you learned and continue with confidence.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="content-section about-section">
+        <div class="container about-box">
+          <div>
+            <span class="kicker" id="aboutKicker">Mission</span>
+            <h2 id="aboutTitle">Learning should be accessible to everyone.</h2>
+          </div>
+          <p id="aboutText">
+            Kurd AI Academy helps people gain practical skills in languages, digital literacy,
+            and AI literacy so they can build confidence and create new opportunities.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <strong>Kurd AI Academy</strong>
+          <p id="footerText">Access, skills, and opportunity for all.</p>
+        </div>
+        <span id="footerNote">Prototype for learning and demonstration</span>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
